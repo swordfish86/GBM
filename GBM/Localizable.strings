@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  GBM
+
+  Created by Jorge Angel Sanchez Martinez on 24/04/21.
+  
+*/
+"reasonBiometrics" = "Huella digital requerida para continuar";
+"accept" = "Aceptar";
+"faceIdFailedMessage" = "No se pudo autenticarte intenta nuevamente";
+"faceIdTitle" = "Autenticacion";
