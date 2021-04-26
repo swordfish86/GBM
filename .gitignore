@@ -3,5 +3,5 @@
 
 Pods/
 *.lock
-*.xcodeproj
 *.xcworkspace
+GBM.xcodeproj/xcuserdata/*
