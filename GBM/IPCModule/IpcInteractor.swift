@@ -35,7 +35,9 @@ extension IpcInteractor: IpcInteractorProtocol {
     
     func loadIpc() {
         ipcLoaderDisposable = Observable<Int>
-            .interval(RxTimeInterval.seconds(timeInterval), scheduler: MainScheduler.instance)
+            .timer(.seconds(0),
+                   period: .seconds(timeInterval),
+                   scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] time in
                 self?.callIpcData()
             })
